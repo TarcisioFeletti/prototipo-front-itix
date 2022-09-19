@@ -1,0 +1,83 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 105px 0 233px 0;
+  background-color: #2850d1;
+}
+
+section > div.content {
+  width: 80%;
+  max-width: 1310px;
+}
+
+section > div.content > header > * {
+  text-align: right;
+}
+
+#contato > div.content > header > h1 {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0em;
+}
+
+#contato > div.content > header > p {
+  color: #ffffff7d;
+}
+
+#contato > div.content > form {
+  background: #f9f9f9;
+  border-radius: 16px 48px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 114px;
+  padding: 47px 42px 33px 49px;
+}
+
+#contato > div.content > form > label {
+  margin-top: 81px;
+}
+
+#contato > div.content > form input {
+  border: 0px;
+  border-bottom: 2px solid #2850d1;
+  background-color: #f9f9f9;
+}
+
+#contato > div.content > form input:focus {
+  border-bottom: 3px solid #2850d1;
+  background-color: #f9f9f9;
+  outline: 0;
+}
+
+#contato > div.content > form > div.informacoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 29px;
+}
+
+#contato > div.content > form > div.informacoes > div {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#contato > div.content > form > div.informacoes > div > input:first-of-type {
+  margin-bottom: 47px;
+}
+
+#contato > div.content > form > button {
+  margin-top: 41px;
+  align-self: flex-end;
+  background: #2850d1;
+  border-radius: 8px 24px;
+  border: 0;
+  color: white;
+  padding: 1em 3em;
+}
+
+#contato > div.content > form > button:hover {
+  box-shadow: 5px 5px 15px #898989, -5px -5px 15px #ffffff;
+}

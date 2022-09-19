@@ -1,0 +1,73 @@
+div.card {
+  display: flex;
+  background: #ffffff;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 16px 48px;
+  margin-bottom: 48px;
+  width: 100%;
+  height: 215px;
+}
+
+div.card > div.image {
+  width: 35%;
+  height: auto;
+}
+
+div.card > div.image > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px 0 0 48px;
+  object-fit: cover;
+}
+
+div.card > div.informacoes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 25px 35px 21px 27px;
+  width: 75%;
+  flex-grow: 1;
+}
+
+div.card > div.informacoes > h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 36px;
+}
+
+div.card > div.informacoes > p {
+  color: #737373;
+  flex-grow: 1;
+  line-height: 27px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /** número de linhas que você quer exibir */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+div.card > div.informacoes > footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.card > div.informacoes > footer > p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #999999;
+}
+
+div.card > div.informacoes > footer > a:link,
+div.card > div.informacoes > footer > a:visited {
+  text-decoration: none;
+  color: #2d57df;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+div.card > div.informacoes > footer > a:hover {
+  color: darkslateblue;
+}

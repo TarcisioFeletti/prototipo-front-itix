@@ -1,0 +1,24 @@
+<header>
+  <img src="../../assets/images/output-onlinepngtools 1.png" alt="Logo itix" />
+  <nav>
+    <ul>
+      <li>
+        <a
+          (click)="trocarPagina(0)"
+          href="#"
+          [ngClass]="pagina == 0 ? 'selected' : ''"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          (click)="trocarPagina(1)"
+          href="#"
+          [ngClass]="pagina == 1 ? 'selected' : ''"
+          >Blog</a
+        >
+      </li>
+      <li><a (click)="trocarPagina(0)" href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,14 @@
+<section>
+  <div class="content">
+    <header>
+      <h1>Oportunidades para você!</h1>
+      <p>
+        Dê uma olhada nas vagas que temos disponíveis e venha trabalhar com a
+        gente ;D
+      </p>
+    </header>
+    <div class="cards">
+      <app-card *ngFor="let card of cards" [card]="card"></app-card>
+    </div>
+  </div>
+</section>

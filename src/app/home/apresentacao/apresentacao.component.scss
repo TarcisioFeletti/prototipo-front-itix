@@ -1,0 +1,35 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5e5e5;
+  padding-top: 50px;
+}
+
+section > div.content {
+  width: 80%;
+  max-width: 1310px;
+}
+
+section > div.content > header > h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+section > div.content > header > p {
+  font-weight: 500;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #999999;
+}
+
+section div.cards {
+  display: flex;
+  justify-content: flex-start;
+  gap: 55px;
+  padding: 51px 100px 124px 100px;
+  margin: 0 -100px;
+}

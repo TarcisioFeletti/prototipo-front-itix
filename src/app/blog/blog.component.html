@@ -1,0 +1,12 @@
+<main>
+  <header>
+    <h1>Blog da comunidade</h1>
+    <p>
+      Encontre aqui conteúdos diversos sobre programação que nossos insiders
+      prepararam para você ;D
+    </p>
+  </header>
+  <div class="cards">
+    <app-card-blog *ngFor="let card of cards" [card]="card"></app-card-blog>
+  </div>
+</main>
