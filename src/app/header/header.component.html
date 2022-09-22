@@ -3,22 +3,14 @@
   <nav>
     <ul>
       <li>
-        <a
-          (click)="trocarPagina(0)"
-          href="#"
-          [ngClass]="pagina == 0 ? 'selected' : ''"
-          >Home</a
-        >
+        <a routerLinkActive="selected" routerLink="" href="#">Home</a>
       </li>
       <li>
-        <a
-          (click)="trocarPagina(1)"
-          href="#"
-          [ngClass]="pagina == 1 ? 'selected' : ''"
-          >Blog</a
-        >
+        <a routerLinkActive="selected" routerLink="blog" href="#">Blog</a>
       </li>
-      <li><a (click)="trocarPagina(0)" href="#contato">Contato</a></li>
+      <li>
+        <a href="#contato">Contato</a>
+      </li>
     </ul>
   </nav>
 </header>

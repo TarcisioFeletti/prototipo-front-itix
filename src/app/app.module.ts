@@ -11,6 +11,7 @@ import { CardComponent } from './home/apresentacao/card/card.component';
 import { CardBlogComponent } from './blog/card-blog/card-blog.component';
 import { ApresentacaoComponent } from './home/apresentacao/apresentacao.component';
 import { ContatoComponent } from './home/contato/contato.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { ContatoComponent } from './home/contato/contato.component';
     ApresentacaoComponent,
     ContatoComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

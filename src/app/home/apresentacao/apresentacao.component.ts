@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CardHome } from 'src/app/model/card-home';
+import { ApresentacaoService } from './apresentacao.service';
 import { CardComponent } from './card/card.component';
 
 @Component({
@@ -8,25 +9,11 @@ import { CardComponent } from './card/card.component';
   styleUrls: ['./apresentacao.component.scss'],
 })
 export class ApresentacaoComponent implements OnInit {
-  cards: CardHome[] = [
-    {
-      titulo: 'Desenvolvedor Java',
-      texto:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consectetur officia laudantium, hic quod dolores excepturi iure repudiandae accusantium asperiores mollitia fuga. Culpa libero itaque nisi saepe numquam illo obcaecati.',
-    },
-    {
-      titulo: 'Desenvolvedor Java',
-      texto:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consectetur officia laudantium, hic quod dolores excepturi iure repudiandae accusantium asperiores mollitia fuga. Culpa libero itaque nisi saepe numquam illo obcaecati.',
-    },
-    {
-      titulo: 'Desenvolvedor Java',
-      texto:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consectetur officia laudantium, hic quod dolores excepturi iure repudiandae accusantium asperiores mollitia fuga. Culpa libero itaque nisi saepe numquam illo obcaecati.',
-    },
-  ];
+  cards: CardHome[] = [];
 
-  constructor() {}
+  constructor(private service: ApresentacaoService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.service.getCards().subscribe((cards) => (this.cards = cards));
+  }
 }
